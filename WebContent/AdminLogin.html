@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+
+<meta http-equiv="content-type" content="text/html; charset=utf-8">
+<div id="container"></div>
+<center><h1> Online Banking</h1></center>
+<script type="text/javascript">
+function Validate()
+{
+if(document.f.uId.value=="")
+{
+alert("plz enter user id");
+return false;
+}else if(document.f.pwd.value==""){
+	alert("plz enter password");
+}
+else{ 
+return true;
+}
+}
+
+</script>
+
+</head>
+
+
+<body>
+
+<link rel="stylesheet" href="layout.css"title="style1"media="screen">
+<div id="content">
+
+<h2>ADMIN LOGIN </h2>
+<center>
+<form action="ChkAdminLogin" method="post" name="f" onSubmit="return Validate();" >
+<table>
+<tr><td>UserId</td><td><input type="text" name="uId"></td></tr>
+<tr><td>Password</td><td><input type="password" name="pwd"></td></tr>
+<tr><td><input type="submit" name="submit" value="submit"></td></tr>
+</table>
+</form>
+</center>
+
+
+	
+</body>
+</html>

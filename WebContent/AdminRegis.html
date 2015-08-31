@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+<script type="text/javascript">
+
+function Validate()
+{
+	if(document.f.uName.value=="")
+		{
+		alert("plz enter name");
+		return false;
+		}
+	else if(document.f.address.value=="")
+			{
+			alert("plz enter address");
+			return false;
+			}
+	else if(document.f.mobNo.value=="")
+				{
+				alert("plz enter Mob no.");
+				return false;
+				}
+	else if(document.f.gender.value=="")
+				{
+					alert("plz select gender");
+					return false;
+					}
+	else if(document.f.gender.value=="")
+					{
+						alert("plz select gender");
+						return false;
+						}
+	else if(document.f.branch.value=="")
+						{
+							alert("plz enter branch");
+							return false;
+							}
+	else if(document.f.emailId.value=="")
+							{
+								alert("plz enter emailId");
+								return false;
+								}else
+									{
+									return true;
+									}
+	}
+
+</script>
+</head>
+<body>
+<link rel="stylesheet" href="layout.css"title="style1"media="screen">
+
+<CENTER><h2>CUSTOMER REGISTRATION FORM</h2></CENTER>
+<div id="menu" style="background-color:#FFD700;height:300px;width:200px;float:right;">
+<b>Link to....</b><br>
+<ul>
+<li>
+<a href="Depost&wthdraw.html">TRANSACTION</a>
+
+</li>
+<li>
+<a href="DeleteCstmr.jsp">DELETE ACCOUNT</a>
+<!-- <li>
+<a href="">ADD EXISTING USER </a>
+</li>
+ --><!-- <li>
+<a href="UpdateAccount.jsp">EDIT PROFILE</a>
+</li>
+ --></ul>
+</div>
+<form action="AdminRegis" method = "post" name="f" onload="return Validate();" >
+
+
+
+
+
+<table>
+<tr><td>Name</td><td><input type ="text" autocomplete="off" name="uName" placeholder="name" required/>
+<tr><td>Address</td><td><input type ="text" name="address" required />
+<tr><td>Mob no.</td><td><input type ="text" maxlength="10" name="mobNo"  required/>
+<tr><td>Gender(M/F)</td><td><input type ="radio" name="gender" value ="male">Male<input type="radio" name ="gender" value="female" required>Female</td></tr>
+<tr><td>A/C no</td><td><input type ="text" name="acNo"/>
+<tr><td>Branch name</td><td><input type ="text" name="branch" required/>
+<tr><td>User ID</td><td><input type ="text" name="uId" required/>
+<tr><td>password</td><td><input type="text" name="pwd"/></td>
+<tr><td>Email Id</td><td><input type ="email" name="emailId" required/>
+
+
+
+<tr><td><input type ="submit"  value="submit details"  />
+</table>
+</form>
+
+</body>
+</html>

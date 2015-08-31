@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+<script type="text/javascript">
+function Validate()
+{
+if(document.f.fromAcNo.value=="")
+{
+alert("plz enter  ac no");
+return false;
+
+}
+}
+</script>
+</head>
+<body>
+<form action="TransacControl" method="get" name="f" onSubmit="return Validate();">
+<table>
+<tr><td>From A/C no</td><td><input type="text" name="fromAcNo"></td></tr>
+<tr><td><input type="submit" value="View Transaction"></td></tr>
+
+</table>
+
+
+</form>
+
+</body>
+</html>

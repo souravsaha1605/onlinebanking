@@ -1,0 +1,27 @@
+h1
+{
+background-color:#600000 ;
+margin: 0;
+padding:30px 60px 55px 40px;
+font-family:"lucida grand","lucida sana","trebuchet ms";
+font-size:250%;
+font-weight:bold;
+color:#fff;
+}
+h2
+{background-color:#66CCCC;
+margin:18px 0 3px 8px;
+padding:8px 0px 3px 8px;
+font-size:115%;
+font-weight:bold;
+color:#2B2B6A;
+border-bottom:2px solid#6600CC;
+}
+body
+{
+background-color:#FAFACF;
+
+input[type="text"]{
+  color: #000000; 
+}
+}

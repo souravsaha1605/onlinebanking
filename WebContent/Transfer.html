@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+<script type="text/javascript">
+function Validate()
+{
+if(document.f.fromAcNo.value=="")
+{
+alert("plz enter  sourse ac no");
+return false;
+}else if(document.f.toAcNo.value=="")
+{
+alert("plz enter destination ac no");
+return false;
+}
+else if(document.f.amount.value=="")
+{
+	alert("plz enter the amount ");
+	return false;
+	}
+else if(document.f.uId.value="")
+	{
+	alert("plz enter the User Id");
+	return false;
+	}
+else if(document.f.pwd.value=="")
+	{
+	alert("plz enter the password");
+	return false;
+	}
+
+
+}
+
+
+</script>
+<script type="text/javascript">
+function myTimer()
+{
+	window.setTimeout("location=('http://localhost:8080/OnlineBanking/CustomerLogin.html');",5000);
+	
+	}
+window.onload = myTimer;
+
+</script>
+</head>
+<body>
+<form action ="TrnsfrMoney" method="post"  name="f" onSubmit="return Validate();">
+<table>
+
+<tr><td>From A/C no</td><td><input type="text" name="fromAcNo"></td></tr>
+<tr><td>To A/C no</td><td><input type="text" name="toAcNo"></td></tr>
+<tr><td>Amount</td><td><input type="text" name="amount"></td></tr>
+<tr><td>UserId</td><td><input type="text" name="uId"></td></tr>
+<tr><td>Password</td><td><input type="password" name="pwd"></td></tr>
+
+<tr><td></td><td><input type="submit" name="submit" value="Transfer"></td></tr>
+
+</table>
+
+
+
+</form>
+</body>
+</html>
